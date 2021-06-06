@@ -29,3 +29,8 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-06-06 23:11:06.547
 !MESSAGE 
+
+!ENTRY org.eclipse.core.resources 2 2 2021-06-06 23:30:52.338
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-06-06 23:30:52.338
+!MESSAGE The project description file (.project) for '백준' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
