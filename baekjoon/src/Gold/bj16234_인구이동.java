@@ -1,4 +1,4 @@
-package bj;
+package Gold;
 
 import java.awt.Point;
 import java.io.BufferedReader;
