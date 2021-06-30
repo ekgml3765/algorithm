@@ -22,8 +22,7 @@ public class 다리를지나는트럭 {
 		public Truck(int truckWeight, int arriveTime) {
 			this.truckWeight = truckWeight;
 			this.arriveTime = arriveTime;
-		}
-		
+		}	
 	}
 	public static int solution(int bridge_length, int weight, int[] truck_weights) {
 		int answer = 0;
@@ -62,11 +61,6 @@ public class 다리를지나는트럭 {
 			time++;
 		}
 		answer = time;
-		System.out.println(time);
-		// 먼저 이동할 택시를 큐에 담고 큐에서 택시가 다 빠질때까지
-		// 매 초마다 다리에 택시를 올릴 수 있을때까지 올려
-		// 그리고 택시들이 내려야할 시간을 봐. 그시간이 되면 다리에서 빼
-
 		return answer;
 	}
 
