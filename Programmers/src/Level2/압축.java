@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class 캐시 {
+public class 압축 {
 
 	public static void main(String[] args) {
 		String msg = "ABABABABABABABAB";
