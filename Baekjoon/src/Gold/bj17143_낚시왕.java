@@ -53,15 +53,6 @@ public class bj17143_낚시왕 {
 		for (int i = 1; i <= M; i++) {
 			map[sharkList[i].r][sharkList[i].c] = i;
 		}
-		
-//		for (int i = 0; i < R; i++) {
-//			for (int j = 0; j < C; j++) {
-//				System.out.print(map[i][j] +" ");
-//			}
-//			System.out.println();
-//		}
-//		
-//		System.out.println();
 		//열만큼 반복
 		int ans = 0;
 		for (int j = 0; j < C; j++) {
