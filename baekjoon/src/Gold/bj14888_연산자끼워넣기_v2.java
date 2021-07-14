@@ -11,6 +11,7 @@ public class bj14888_연산자끼워넣기_v2 {
 
 
 	public static void main(String[] args) throws IOException {
+		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine());
 		N = Integer.parseInt(st.nextToken());

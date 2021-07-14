@@ -18,6 +18,7 @@ public class bj16234_인구이동 {
 	static int dc[] = { 0, 0, -1, 1 };
 
 	public static void main(String[] args) throws IOException {
+		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine());
 		N = Integer.parseInt(st.nextToken());

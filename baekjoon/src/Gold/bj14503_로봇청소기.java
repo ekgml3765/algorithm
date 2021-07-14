@@ -11,7 +11,6 @@ public class bj14503_로봇청소기 {
 	static int dc[] = { 0, 1, 0, -1 };
 
 	public static void main(String[] args) throws IOException {
-
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine(), " ");
 

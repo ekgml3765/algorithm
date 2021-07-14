@@ -11,6 +11,7 @@ public class bj11724_연결요소의개수 {
 	static ArrayList<Integer> arrList [];
 	static boolean visit[];
 	public static void main(String[] args) throws IOException {
+		
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine()," ");
 		int n = Integer.parseInt(st.nextToken()); //정점의 개수
