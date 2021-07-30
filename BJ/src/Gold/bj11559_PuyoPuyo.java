@@ -21,17 +21,15 @@ public class bj11559_PuyoPuyo {
 		for (int i = 0; i < 12; i++) {
 			String s = in.readLine();
 			map[i] = s.toCharArray(); 
-		}
-		
+		}		
 		int ans = 0;
 		while(true) {
 			bfs();
 			if(!flag)
 				break;
 			ans++;
-			down();//중력
+			down();
 		}
-
 		System.out.println(ans);
 	}
 	static class Color{
