@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class bj2638_치즈 {
+public class bj2636_치즈 {
 
 	static int N, M, cnt = 0;
 	static int map[][];
