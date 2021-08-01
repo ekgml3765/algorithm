@@ -42,7 +42,6 @@ public class bj2636_치즈 {
 	static int dr[] = { -1, 1, 0, 0 };
 	static int dc[] = { 0, 0, -1, 1 };
 	private static void bfs() {
-		List<Point> list = new ArrayList<>();
 		Queue<Point> queue = new LinkedList<>();
 		boolean visit[][] = new boolean[N][M];
 		queue.add(new Point(0, 0));
@@ -57,7 +56,6 @@ public class bj2636_치즈 {
 					if (map[nr][nc] == 1) {
 						map[nr][nc] = 0;
 						cnt--;
-						list.add(new Point(nr, nc));
 						continue;
 					}
 					queue.add(new Point(nr, nc));
