@@ -1,5 +1,5 @@
 <p>매일 꾸준히 알고리즘 1문제 이상 풀고있습니다. ✔</p>
-<p>문제 풀이는 아래 블로그에 포스팅을 하고 있으니 참고해주세요! ✔ </p>
+<p><b>문제 풀이는 아래 블로그에 포스팅을 하고 있으니 참고해주세요! ✔ </p>
 <p><a href="https://ilmiodiario.tistory.com/"> 다희의 코딩 성장 일기 ✔</a></p>
 <br>
 <h2>💙 백준 💙</h2>
@@ -11,3 +11,10 @@
 <li><a href="https://github.com/ekgml3765/algorithm/tree/main/Programmers/src/Level1"> level 1</a></li>
 <li><a href="https://github.com/ekgml3765/algorithm/tree/main/Programmers/src/Level2">level 2</a></li>
 <li><a href="https://github.com/ekgml3765/algorithm/tree/main/Programmers/src/Level3">level 3</a></li>
+<br>
+<h2>💛 정올 💛</h2>
+<li><a href="https://github.com/ekgml3765/algorithm/tree/main/JONGOL/src"> 정올 문제 링크 </a></li>
+<br>
+<h2>🧡 코딜리티 🧡</h2>
+<li><a href="https://github.com/ekgml3765/algorithm/tree/main/Codility/src"> 코딜리티 문제 링크</a></li>
+
