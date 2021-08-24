@@ -8,7 +8,7 @@ public class 괄호변환 {
 	          return p;
 	      return dfs(p);
 	    }
-	    public static boolean check(String s){
+	    public static boolean check(String s){ //올바른 괄호열 체크
 	        Stack<Character> stack = new Stack<>();
 	        for(int i = 0; i < s.length(); i++){
 	            char c = s.charAt(i);
@@ -27,10 +27,10 @@ public class 괄호변환 {
 	    }
 	    
 	    public static String dfs(String w){
-	        if(w.length() == 0){
+	        if(w.length() == 0){ //빈 문자열 이라면 빈문자열 return
 	            return "";
 	        }
-	        String u = "";
+	        String u = ""; //더이상 분리할 수 없는 균형잡힌 괄호 문자열
 	        String v = "";
 	        int cnt1 = 0, cnt2= 0;
 	        for(int i = 0; i < w.length(); i++){
@@ -47,7 +47,7 @@ public class 괄호변환 {
 	                break;
 	            }
 	        }
-	        if(!check(u)){
+	        if(!check(u)){//u가 올바른 괄호 문자열이 아니라면
 	            String tmp = "(" + dfs(v);
 	            tmp += ")";
 	            u = u.substring(1,u.length()-1);
@@ -57,7 +57,7 @@ public class 괄호변환 {
 	            tmp += u;
 	            return tmp;
 	        }
-	        else {
+	        else {//u가 올바른 괄호 문자열이라면
 				return u + dfs(v);
 			} 
 	    }
