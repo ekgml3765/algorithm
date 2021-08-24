@@ -1,4 +1,4 @@
-package Level1;
+package Level2;
 
 public class 행렬의곱셈 {
     public int[][] solution(int[][] arr1, int[][] arr2) {
