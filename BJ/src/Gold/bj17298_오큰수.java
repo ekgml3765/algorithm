@@ -15,6 +15,7 @@ public class bj17298_오큰수 {
 		int ans[] = new int[N];
 		Stack<Point> stack = new Stack<>();
 		StringTokenizer st = new StringTokenizer(in.readLine());
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < N; i++) {
 			arr[i] = new Point(i, Integer.parseInt(st.nextToken()));
 		}
@@ -25,9 +26,13 @@ public class bj17298_오큰수 {
 			}
 			stack.add(arr[i]);
 		}
-		for (int i = 0; i < ans.length; i++) {
-			System.out.print((ans[i] == 0) ? -1 : ans[i]);
-			System.out.print(" ");
+		while(!stack.isEmpty()) {
+			ans[stack.pop().x] = -1;
 		}
+		for (int i = 0; i < ans.length; i++) {
+			//System.out.print((ans[i] == 0) ? -1 : ans[i]);
+			sb.append(ans[i]+ " ");
+		}
+		System.out.println(sb);
 	}
 }
