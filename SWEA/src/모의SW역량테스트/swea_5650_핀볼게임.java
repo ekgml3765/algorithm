@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class swep_5650_핀볼게임 {
+public class swea_5650_핀볼게임 {
 
 	static int ans = 0, N;
 	static int map[][];
