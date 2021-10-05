@@ -18,7 +18,7 @@ public class swea_2382_미생물격리 {
 	static int dc[] = { 0, 0, -1, 1 };
 
 	static class Node {
-		int r, c, d, cnt, time = 0;
+		int r, c, d, cnt;
 		boolean flag = false;
 
 		public Node(int r, int c, int cnt, int d) {
@@ -27,15 +27,7 @@ public class swea_2382_미생물격리 {
 			this.cnt = cnt;
 			this.d = d;
 		}
-
-		@Override
-		public String toString() {
-			return "Node [r=" + r + ", c=" + c + ", d=" + d + ", cnt=" + cnt + ", time=" + time + ", flag=" + flag
-					+ "]";
-		}
-
 	}
-
 	static Node list[];
 	static int map[][];
 	static Queue<Integer> queue;
@@ -88,13 +80,13 @@ public class swea_2382_미생물격리 {
 						List<Integer> list = new ArrayList<>();
 						list.add(map[nr][nc]);
 						list.add(num);
+						hash.put(new Point(nr, nc), list);
 					}else {
 						hash.get(new Point(nr, nc)).add(num);
 					}
 				}
 				node.r = nr;
 				node.c = nc;
-				node.time++;
 				map[nr][nc] = num;
 				list[num] = node;
 			}
@@ -103,15 +95,14 @@ public class swea_2382_미생물격리 {
 				int num = comp.get(0);
 				int max = list[num].cnt;
 				int sum = list[num].cnt;
-				System.out.println(comp.toString());
 				for (int j = 1; j < comp.size(); j++) {
-					sum += list[comp.get(i)].cnt;
-					if(max < list[comp.get(i)].cnt) {
+					sum += list[comp.get(j)].cnt;
+					if(max < list[comp.get(j)].cnt) {
 					    list[num].flag = true;
-						max = list[comp.get(i)].cnt;
-						num = comp.get(i);
+						max = list[comp.get(j)].cnt;
+						num = comp.get(j);
 					}else {
-						list[comp.get(i)].flag = true;
+						list[comp.get(j)].flag = true;
 					}
 				}
 				list[num].cnt = sum;
