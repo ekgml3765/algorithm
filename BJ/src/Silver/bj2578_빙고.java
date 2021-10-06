@@ -45,8 +45,6 @@ public class bj2578_빙고 {
 		for (int i = 0; i < 5; i++) {
 			int w = 0;
 			int l = 0;
-			int a = 0;
-			int b = 0;
 			for (int j = 0; j < 5; j++) {
 				if(visit[i][j])
 					w++;
