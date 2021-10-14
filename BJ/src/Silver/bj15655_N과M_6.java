@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class bj15655_N과M_6 {
-
+public class bj15655_N과M_6{
 	static int N, M, arr[];
 	static int[] sel;
 	public static void main(String[] args) throws IOException {
