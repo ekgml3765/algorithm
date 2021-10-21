@@ -1,5 +1,4 @@
 package Gold;
-
 import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,26 +10,16 @@ import java.util.StringTokenizer;
 
 public class bj20056_마법사상어와파이어볼_2회독 {
 	static int N, M, K, ans = 0;
-
 	static class Node {
 		int r, c, m, s, d;
-
 		public Node(int r, int c, int m, int s, int d) {
 			this.r = r;
 			this.c = c;
 			this.m = m;
 			this.s = s;
 			this.d = d;
-		}
-
-		@Override
-		public String toString() {
-			return "Node [r=" + r + ", c=" + c + ", m=" + m + ", s=" + s + ", d=" + d + "]";
-		}
-		
-		
+		}	
 	}
-
 	static int dr[] = { -1, -1, 0, 1, 1, 1, 0, -1 };
 	static int dc[] = { 0, 1, 1, 1, 0, -1, -1, -1 };
 	static HashMap<Point, List<Node>> map;
