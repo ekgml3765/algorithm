@@ -12,7 +12,6 @@ public class bj12100_2048Easy {
 	static int dr[] = { -1, 1, 0, 0 };// 상하좌우
 	static int dc[] = { 0, 0, -1, 1 };
 	static boolean check[][];
-
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(in.readLine());
@@ -95,14 +94,6 @@ public class bj12100_2048Easy {
 				}
 			}
 		}
-//		System.out.println(dir + " 방향으로 옮김");
-//		for (int i = 0; i < map.length; i++) {
-//			for (int j = 0; j < map.length; j++) {
-//				System.out.print(map[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
-//		System.out.println("===============");
 	}
 
 	private static Point go(int i, int j, int d, int map[][]) {
