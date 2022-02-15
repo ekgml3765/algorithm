@@ -50,7 +50,6 @@ public class bj4970_디지털회로개론 {
 
 	static Stack<Character> stack1;
 	static Stack<Integer> stack2;
-
 	private static void check() {
 		stack1 = new Stack<>();
 		stack2 = new Stack<>();
@@ -82,12 +81,12 @@ public class bj4970_디지털회로개론 {
 						} else {
 							while (!stack1.isEmpty()) {
 								top = stack1.peek();
-								if (((int) top < (int) c)) {
-									stack1.add(c);
+								if ((int) top < (int) c) {
 									break;
 								}
 								calc(stack1.pop());
 							}
+							stack1.add(c);
 						}
 					}
 				} else {// 피연산자
